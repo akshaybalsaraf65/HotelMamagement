@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" > 
+	
+	<hibernate-mapping>
+	<class name="pojo.city" table="city">
+	<id name="cityid" >
+	<generator class="native"></generator>
+	</id>
+	<property name="cityname" column="cityname"></property>
+	<set name="hotel" table="hotel">
+		<key>
+		<column name="hotelid"></column>
+		</key>
+		<one-to-many class="pojo.hotel" />
+	</set>
+	</class>
+	</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" > 
+
+<hibernate-mapping>
+<class name="Bean.Pojo.citysearch" table="city">
+
+          <id name="cityid" column="cityid">
+			<generator class="native" />
+		</id>
+		<property name="cityname">
+			<column name="cityname" />
+		</property>
+		<set name="hotelsearch" table="hotel" inverse="true" cascade="save-update">
+			<key>
+			<column name="hotelid" not-null="true"></column>
+			</key>
+		<one-to-many class="Bean.Pojo.hotelsearch"></one-to-many>
+		</set>
+			
+
+</class>
+
+
+
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" > 
+	
+	<hibernate-mapping>
+	<class name="pojo.room" table="room">
+	<id name="roomid" >
+	<generator class="native"></generator>
+	</id>
+	<property name="roomname" column="roomname"></property>
+	<property name="price" column="price"></property>
+	<!-- many to one mapping -->
+	
+	<many-to-one 
+	name="hotel" 
+	class="pojo.hotel"
+	not-null="true"
+	>
+	<column name="hotelid"></column>
+	</many-to-one>
+	
+	
+	
+	
+	</class>
+	</hibernate-mapping>

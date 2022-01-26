@@ -1,0 +1,100 @@
+
+
+.hero-image {
+  background-image: url("bg2.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image1 {
+  background-image: url("bg3.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#btnstyle {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#btnstyle:hover {background-color: #3e8e41}
+
+#btnstyle:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.background{
+
+height: 85%;
+width: 100%;
+background-color: aqua;
+
+}
+
+.backgroundhotel{
+	height: 85%;
+width: 100%;
+background-color: FFFFE0;
+}
+
+/* .hotfea{
+	
+	font-size: 150px;
+	color: red;
+	text-align: center;
+}
+#hotfea1{
+	font-size: 130px;
+	color: red;
+	 position: absolute;
+  	left: 100px;
+	}
+	#hotfea2{
+	font-size: 130px;
+	color: red;
+	 position: absolute;
+  	left: 150px;
+	}
+	#hotfea3{
+	font-size: 130px;
+	color: red;
+	 position: absolute;
+  	left: 200px;
+	}
+	#hotfea4{
+	font-size: 130px;
+	color: red;
+	 position: absolute;
+  	left: 300px;
+	}
+	#hotfea5{
+	font-size: 130px;
+	color: red;
+	 position: absolute;
+  	left: 350px;
+	
+	}
+	#hotfea6{
+	font-size: 130px;
+	color: red;
+	 position: absolute;
+  	left: 400px;
+	} */
